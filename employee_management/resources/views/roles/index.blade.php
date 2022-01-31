@@ -35,9 +35,14 @@
                                     <a class="btn btn-primary" href="{{ route('roles.edit',$role->id) }}">Edit</a>
                                 @endcan
                                 @can('role-delete')
-                                    {!! Form::open(['method' => 'DELETE','route' => ['roles.destroy', $role->id],'style'=>'display:inline']) !!}
-                                        {!! Form::submit('Delete', ['class' => 'btn btn-danger']) !!}
-                                    {!! Form::close() !!}
+								<form action="{{ route('roles.destroy',$user->id) }}" method="POST" class="d-inline">
+                                    @csrf
+                                    @method('DELETE')
+                                    <button type="submit" class="btn btn-danger"
+                                            onclick="return confirm('Are you sure you want to delete this role')">
+                                        Delete
+                                    </button>
+                                </form>
                                 @endcan
                             </td>
                         </tr>
