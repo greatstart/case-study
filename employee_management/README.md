@@ -1,4 +1,5 @@
 ## Admin Login
+URL: http://34.125.83.170/login
 Email: admin@gmail.com<br>
 Password: 12345678
 
