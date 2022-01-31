@@ -28,7 +28,7 @@ Create an Employee Management project.
 3. Commits to be written following the Conventional Commits specification
 
 **Designer**
-1. Reply the email with the working files
+1. Reply the email (chennee72@gmail.com) with the working files
 
 # Requirements
 1. As a User, I want to login.
