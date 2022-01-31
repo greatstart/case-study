@@ -35,7 +35,7 @@
                                     <a class="btn btn-primary" href="{{ route('roles.edit',$role->id) }}">Edit</a>
                                 @endcan
                                 @can('role-delete')
-								<form action="{{ route('roles.destroy',$user->id) }}" method="POST" class="d-inline">
+								<form action="{{ route('roles.destroy',$role->id) }}" method="POST" class="d-inline">
                                     @csrf
                                     @method('DELETE')
                                     <button type="submit" class="btn btn-danger"
