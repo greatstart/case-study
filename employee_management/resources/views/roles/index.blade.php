@@ -22,7 +22,7 @@
                             <th>Name</th>
                             <th width="280px">Action</th>
                         </tr>
-                        @if (count($data) == 0)
+                        @if (count($roles) == 0)
                             <td colspan="3">No records</td>
                         @endif
                         @foreach ($roles as $key => $role)
