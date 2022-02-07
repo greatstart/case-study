@@ -13,6 +13,8 @@ abstract class TestCase extends BaseTestCase
 
     protected $faker;
 
+    // protected $seed = true;
+
     /**
      * Sets up the tests
      */
@@ -23,6 +25,8 @@ abstract class TestCase extends BaseTestCase
         $this->faker = Faker::create();
 
         Artisan::call('migrate'); // runs the migration
+
+        Artisan::call('db:seed');
     }
 
 
